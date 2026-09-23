@@ -1,8 +1,4 @@
-"""Leitor minimo de Parquet em Python puro (sem pyarrow/fastparquet).
 
-Cobre o necessario para o BTG-TLD-A26: thrift compact protocol para o footer,
-descompressao SNAPPY, e decodificacao PLAIN / RLE_DICTIONARY / RLE-bitpacked.
-"""
 from __future__ import annotations
 
 import struct

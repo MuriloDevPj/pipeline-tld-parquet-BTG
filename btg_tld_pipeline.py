@@ -1,13 +1,5 @@
 """
-Pipeline BTG-TLD-A26 v2: ticks -> order flow -> Markov -> regras -> validacao.
-
-Novidades da v2:
-  * ingestao em streaming (base inteira, RAM = 1 sessao de ticks)
-  * perfil intradiario por faixa de horario do pregao
-  * busca de parametros com walk-forward (sem look-ahead) + teste de permutacao
-  * stop/alvo dimensionados por desvio-padrao intradiario, sem sobreposicao de
-    posicao e com circuit breaker de perda diaria
-
+Pipeline BTG-TLD-A26: ticks -> order flow -> Markov -> regras -> validacao.
 Uso:
     python btg_tld_pipeline.py --demo
     python btg_tld_pipeline.py --path dados/ --freq 1min --out saida
